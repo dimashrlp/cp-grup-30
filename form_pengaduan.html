@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MacaNews</title>
+    <title>Spill Detik</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,14 +21,16 @@
 
   <body>
     <nav class="navbar">
-      <a href="index.html" class="navbar-logo">Spill Detik</a>
+      <a href="index.html" class="navbar-logo"><img src="./image/logo-2.png" alt="logo"></a>
 
       <div class="navbar-nav">
-        <a href="#">Home</a>
+        <a href=".home.html">Home</a>
 
         <!-- Dropdown Nasional -->
-        <div class="dropdown">
-          <a href="national.html" class="dropdown-toggle">Nasional</a>
+        
+        <div class="dropdown" id="nationalDropdown">
+          <a href="national.html" class="navbar-item" id="nationalLink">Nasional</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
           <div class="dropdown-menu">
             <a href="politik.html">Politik</a>
             <a href="#">Hukum & Kriminal</a>
@@ -39,10 +41,11 @@
         </div>
 
         <!-- Dropdown Internasional -->
-        <div class="dropdown">
-          <a href="#" class="dropdown-toggle">Internasional</a>
+        <div class="dropdown" id="internationalDropdown">
+          <a href="international.html" class="navbar-item" id="internationalLink">Internasional</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
           <div class="dropdown-menu">
-            <a href="#">Asean</a>
+            <a href="asean.html">Asean</a>
             <a href="#">Asia Pasifik</a>
             <a href="#">Timur Tengah</a>
             <a href="#">Eropa Amerika</a>
@@ -50,54 +53,61 @@
         </div>
 
         <!-- Dropdown Ekonomi -->
-        <div class="dropdown">
-          <a href="#" class="dropdown-toggle">Ekonomi</a>
-          <div class="dropdown-menu">
-            <a href="#">Keuangan</a>
-            <a href="#">Energi</a>
-            <a href="#">Bisnis</a>
-            <a href="#">Makro</a>
-            <a href="#">Corporate Action</a>
+        <div class="dropdown" id="economyDropdown">
+          <a href="economy.html" class="navbar-item" id="economyLink">Ekonomi</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="#">Keuangan</a>
+              <a href="#">Energi</a>
+              <a href="#">Bisnis</a>
+              <a href="#">Makro</a>
+              <a href="#">Corporate Action</a>
           </div>
         </div>
+
 
         <!-- Dropdown Olahraga -->
-        <div class="dropdown">
-          <a href="#" class="dropdown-toggle">Olahraga</a>
-          <div class="dropdown-menu">
-            <a href="#">Sepakbola</a>
-            <a href="#">Moto GP</a>
-            <a href="#">F1</a>
-            <a href="#">Raket</a>
+        <div class="dropdown" id="sportsDropdown">
+          <a href="sports.html" class="navbar-item" id="sportsLink">Olahraga</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="#">Sepakbola</a>
+              <a href="#">Moto GP</a>
+              <a a href="#">F1</a>
+              <a href="#">Raket</a>
           </div>
         </div>
 
+
         <!-- Dropdown Teknologi -->
-        <div class="dropdown">
-          <a href="#" class="dropdown-toggle">Teknologi</a>
-          <div class="dropdown-menu">
+        <div class="dropdown" id="technologyDropdown">
+          <a href="technology.html" class="navbar-item" id="technologyLink">Teknologi</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+            <div class="dropdown-menu">
             <a href="#">Teknologi Informasi</a>
             <a href="#">Sains</a>
             <a href="#">Telekomunikasi</a>
             <a href="#">Climate</a>
-          </div>
         </div>
+      </div>
 
         <!-- Dropdown Otomotif -->
-        <div class="dropdown">
-          <a href="#" class="dropdown-toggle">Otomotif</a>
-          <div class="dropdown-menu">
-            <a href="#">Tren</a>
-            <a href="#">Mobil</a>
-            <a href="#">Motor</a>
-            <a href="#">E-Vehicle</a>
-            <a href="#">Commercial</a>
+        <div div class="dropdown" id="automotiveDropdown">
+          <a href="automotive.html" class="navbar-item" id="automotiveLink">Otomotif</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="#">Tren</a>
+              <a href="#">Mobil</a>
+              <a href="#">Motor</a>
+              <a href="#">E-Vehicle</a>
+              <a href="#">Commercial</a>
+            </div>
           </div>
-        </div>
 
         <!-- Dropdown Hiburan -->
-        <div class="dropdown">
-          <a href="#" class="dropdown-toggle">Hiburan</a>
+        <div class="dropdown" id="entertainmentDropdown">
+          <a href="entertainment.html" class="navbar-item" id="entertainmentLink">Hiburan</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
           <div class="dropdown-menu">
             <a href="#">Film</a>
             <a href="#">Musik</a>
@@ -107,17 +117,18 @@
           </div>
         </div>
 
-        <!-- Dropdown Gaya Hidup -->
-        <div class="dropdown">
-          <a href="#" class="dropdown-toggle">Gaya Hidup</a>
-          <div class="dropdown-menu">
-            <a href="#">Health</a>
-            <a href="#">Food</a>
-            <a href="#">Travel</a>
-            <a href="#">Trends</a>
+          <!-- Dropdown Gaya Hidup -->
+          <div class="dropdown" id="lifestyleDropdown">
+            <a href="lifestyle.html" class="navbar-item" id="lifestyleLink">Gaya Hidup</a>
+            <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="#">Health</a>
+              <a href="#">Food</a>
+              <a href="#">Travel</a>
+              <a href="#">Trends</a>
+            </div>
           </div>
-        </div>
-        <a href="login.html" class="navbar-button">Login</a>
+        <a href="login.html" class="navbar-button-menu" >Login</a>
       </div>
 
       <div class="navbar-extra">
